@@ -1,0 +1,31 @@
+.hero-container {
+    display: flex;
+    color:azure;
+}
+
+.profile-icon {
+    width: 35vw;
+}
+
+.description {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.icon {
+    font-size: 3em;
+}
+
+.email {
+    margin-top: 13px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .hero-container {
+        display: block;
+    }
+
+}

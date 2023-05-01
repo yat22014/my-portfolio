@@ -80,7 +80,7 @@
   padding: 4rem 0;
 }
 
-.center::before {
+/* .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
@@ -93,7 +93,7 @@
   width: 240px;
   height: 180px;
   z-index: -1;
-}
+} */
 
 .center::before,
 .center::after {
