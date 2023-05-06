@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import '@/styles/about.css'
+import '@/styles/skills.css'
 import type { AppProps } from 'next/app'
 import { Navbar, Button, Link, Text, Card, Radio } from "@nextui-org/react";
 
@@ -13,10 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
         }}>
 
           <Navbar.Content enableCursorHighlight variant="underline">
-            <Navbar.Link color="inherit" href="#">
+            <Navbar.Link color="inherit" href="/about">
               About
             </Navbar.Link>
-            <Navbar.Link color="inherit" href="#">
+            <Navbar.Link color="inherit" href="/skills">
               Skills
             </Navbar.Link>
             <Navbar.Link color="inherit" href="#">
