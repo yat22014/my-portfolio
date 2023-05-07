@@ -9,133 +9,120 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Experiences() {
     const MockItem = ({ children, name }: {children:  React.ReactElement, name?: string}) => {
         return (
-          <Card css={{ h: "$24", $$cardColor: '$colors$primary' }}>
+          <Card css={{ h: "$40", $$cardColor: '#e5d91f' }}>
             <Card.Body css={{alignItems: 'center'}}>
                 {children}
             </Card.Body>
-            <Card.Footer css={{textAlign: 'center', justifyContent: 'center'}}>{name}</Card.Footer>
+            <Card.Footer css={{textAlign: 'center', justifyContent: 'center', fontWeight: "Bolder"}}>{name}</Card.Footer>
           </Card>
         );
       };
 
     return (
-        <Grid.Container gap={2} justify="center">
-          <Grid xs={2}>
-            <MockItem name={'Javascript'}><img className="icon" src="images/languages/javascript.svg" /></MockItem>
+      <main className={`${styles.main} ${inter.className}`}>
+        <Grid.Container gap={2} justify="flex-start">
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Javascript'}><img className="lang-icon" src="images/languages/javascript.svg" /></MockItem>
           </Grid>
-          <Grid xs={2}>
-            Frontend
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Angular'}><img className="lang-icon" src="images/languages/angularjs.svg" /></MockItem>
           </Grid>
-          <Grid xs={2}>
-            <MockItem name={'Angular'}><img className="icon" src="images/languages/angularjs.svg" /></MockItem>
+          <Grid lg={2} sm={6} xs={12}>
+              <MockItem name={'React'}><img className="lang-icon" src="images/languages/react.svg" /></MockItem>
           </Grid>
-          <Grid xs={2}>
-              <MockItem name={'React'}><img className="icon" src="images/languages/react.svg" /></MockItem>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'nextJs'}><img className="lang-icon" src="images/languages/nextjs.svg" /></MockItem>
           </Grid>
-          <Grid xs={2}>
-            <MockItem name={'jQuery'}><img className="icon" src="images/languages/jquery.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'nextJs'}><img className="icon" src="images/languages/nextjs.svg" /></MockItem>
-          </Grid>
-
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-            Backend
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'nodeJs'}><img className="icon" src="images/languages/nodejs.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'nextJs'}><img className="icon" src="images/languages/nestjs.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'expressJs'}><img className="icon" src="images/languages/expressjs.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          
-          <Grid xs={2}>
-            <MockItem name='PHP'><img className="icon" src="images/languages/php.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'Symfony'}><img className="icon" src="images/languages/symfony.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'CodeIgniter'}><img className="icon" src="images/languages/codeigniter.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-
-          <Grid xs={2}>
-            <MockItem name={'Database'}><img className="icon" src="images/languages/database.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'mySql'}><img className="icon" src="images/languages/mysql.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'MongoDB'}><img className="icon" src="images/languages/mongo.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-              <MockItem name={'DynamoDB'}><img className="icon" src="images/languages/dynamodb.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-
-          <Grid xs={2}>
-            <MockItem name={'CSS'}><img className="icon" src="images/languages/css3.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'Bootstrap'}><img className="icon" src="images/languages/bootstrap.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-
-          <Grid xs={2}>
-            <MockItem name={'Git'}><img className="icon" src="images/languages/git.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'BitBucket'}><img className="icon" src="images/languages/bitbucket.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'Github'}><img className="icon" src="images/languages/github.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-
-          <Grid xs={2}>
-            <MockItem ><img className="icon" src="images/languages/git.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'HTML'}><img className="icon" src="images/languages/html5.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-            <MockItem name={'Typescript'}><img className="icon" src="images/languages/typescript.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-              <MockItem name={'Ionic'}><img className="icon" src="images/languages/ionic.svg" /></MockItem>
-          </Grid>
-          <Grid xs={2}>
-          </Grid>
-          <Grid xs={2}>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'jQuery'}><img className="lang-icon" src="images/languages/jquery.svg" /></MockItem>
           </Grid>
         </Grid.Container>
+
+        <Grid.Container gap={2} justify="flex-start">
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'nodeJs'}><img className="lang-icon" src="images/languages/nodejs.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'nextJs'}><img className="lang-icon" src="images/languages/nestjs.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'expressJs'}><img className="lang-icon" src="images/languages/expressjs.svg" /></MockItem>
+          </Grid>
+        </Grid.Container>
+          
+        <Grid.Container gap={2} justify="flex-start">
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name='PHP'><img className="lang-icon" src="images/languages/php.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Symfony'}><img className="lang-icon" src="images/languages/symfony.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'CodeIgniter'}><img className="lang-icon" src="images/languages/codeigniter.svg" /></MockItem>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container gap={2} justify="flex-start">
+
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Database'}><img className="lang-icon" src="images/languages/database.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'mySql'}><img className="lang-icon" src="images/languages/mysql.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'MongoDB'}><img className="lang-icon" src="images/languages/mongo.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+              <MockItem name={'DynamoDB'}><img className="lang-icon" src="images/languages/dynamodb.svg" /></MockItem>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container gap={2} justify="flex-start">
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'CSS'}><img className="lang-icon" src="images/languages/css3.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Bootstrap'}><img className="lang-icon" src="images/languages/bootstrap.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'SCSS'}><img className="lang-icon" src="images/languages/scss.svg" /></MockItem>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container gap={2} justify="flex-start">
+
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Git'}><img className="lang-icon" src="images/languages/git.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'BitBucket'}><img className="lang-icon" src="images/languages/bitbucket.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Github'}><img className="lang-icon" src="images/languages/github.svg" /></MockItem>
+          </Grid>
+        </Grid.Container>
+
+        <Grid.Container gap={2} justify="flex-start">
+
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem><Text css={{marginTop: '25%', fontWeight: "Bolder", overflow: "hidden"}}>Others</Text></MockItem>
+
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'HTML'}><img className="lang-icon" src="images/languages/html5.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'Typescript'}><img className="lang-icon" src="images/languages/typescript.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+              <MockItem name={'Ionic'}><img className="lang-icon" src="images/languages/ionic.svg" /></MockItem>
+          </Grid>
+          <Grid lg={2} sm={6} xs={12}>
+            <MockItem name={'GraphQL'}><img className="lang-icon" src="images/languages/graphql.svg" /></MockItem>
+          </Grid>
+
+        </Grid.Container>
+      </main>
     );
 }

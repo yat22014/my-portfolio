@@ -12,18 +12,19 @@ export default function About() {
     <>
       <main className={`${styles.main} ${inter.className}`}>
         <div className='hero-container'>
-            <div>
+            <div className='div-container'>
                 <h1>Hi, There! I am Frank Cheung.</h1>
                 <h2>I am a Hong Konger and currently living in Hong Kong.</h2>
                 <div className="description">
                     As a web developer, I participated different types of projects and learn a lot of skills and experenices from that.
+                    Building frontend website based on design from designer, I also help to construct database schema for backend.
                 </div>
                 <span className='icon'><a href="https://linkedin.com/in/frank-cheung-bba552186" target='__blank'><FaLinkedin /></a></span>
                 <span className='icon' style={{marginLeft: '3vh'}}><a href="https://github.com/yat22014" target='__blank'><FaGithub /></a></span>
                 <br />
                 <div className='email'><span className='icon'><AiOutlineMail /> </span><span style={{marginLeft: "10px"}}>yat22010@gmail.com</span></div>
             </div>
-            <div>
+            <div className='div-container'>
                 <img className='profile-icon' src="/me.svg" />
             </div>
         </div>
