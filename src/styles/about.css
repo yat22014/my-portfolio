@@ -5,6 +5,7 @@
 
 .profile-icon {
     width: 35vw;
+    border-radius: 50%;
 }
 
 .description {
