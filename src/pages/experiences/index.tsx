@@ -34,7 +34,7 @@ export default function Experiences() {
             cardDetailedText: ["paragraph1", "paragraph2"],
             timelineContent: <div>
               Maintain and develop shopping cart system to provide apis for miniapp of AlipayHK.
-              Integrate business ideas and different team's feature to shopping cart platform.
+              Integrate business ideas and different teams features to shopping cart platform.
             </div>,
             url: "https://www.codpayment.com/en",
             media: {
