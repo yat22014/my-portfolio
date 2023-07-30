@@ -13,19 +13,19 @@
 .projects-container {
     margin-top: 3%;
     text-align: center;
-    color:azure;
+    color: azure;
 }
 
 .projects-container ul li::before {
     content: "\2022";
     color: yellow;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
-  }
+}
 
-.projects-container > ul > li > a {
+.projects-container>ul>li>a {
     color: yellow;
 }
 
@@ -33,5 +33,4 @@
     .timeline-div {
         width: 100%;
     }
-
 }
