@@ -9,6 +9,25 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Experiences() {
     const expList: TimelineItem[] = [
         {
+            title: "06/2023",
+            cardTitle: "Marvelconnect Technology Limited",
+            cardSubtitle: "Senior developer",
+            cardDetailedText: ["paragraph1", "paragraph2"],
+            timelineContent: <div>
+              Develop and maintain CMS for different companies while sometimes need to create mobile apps for that.
+              Beside CMS, I also revamp self corporate website with a new design.
+              Moreover, I finish a shopping platform for crawling Rakuten and Yahoo Acution website products.
+            </div>,
+            url: "https://www.marvelconnect.com/",
+            media: {
+              name: "marvelconnect",
+              source: {
+                url: "images/company/marvelconnect.svg"
+              },
+              type: "IMAGE"
+            }
+          },
+        {
             title: "07/2022",
             cardTitle: "Instelar Limited",
             cardSubtitle: "Full stack developer",
@@ -110,9 +129,9 @@ export default function Experiences() {
                             theme={{
                                 // primary: "red",
                                 // secondary: "blue",
-                                cardBgColor: "yellow",
+                                cardBgColor: "#E4F0FF",
                                 titleColor: "white",
-                                titleColorActive: "blue",
+                                titleColorActive: "#70313E",
                             }}
                             // classNames={{
                             //   cardMedia: 'my-card-media',
@@ -120,14 +139,17 @@ export default function Experiences() {
                             scrollable 
                         />
                     </div>
-                    <div className="projects-container">
-                      <h2>Participated Public Projects</h2>
-                      <ul>
-                        <li><a href="https://www.360img.net/en/" target="_blank">360 image system</a></li>
-                        <li><a href="https://swhps.edu.hk/" target="_blank">SWH public school website</a></li>
-                        <li><a href="https://www.mckln.edu.hk/" target="_blank">Methodist College school website</a></li>
-                        <li><a href="https://rewardbuy.shop/en" target="_blank">Rewardbuy shopping platform</a></li>
-                      </ul>
+                    <div className="flex justify-center mt-6">
+                      <div className="">
+                        <h2 className="text-2xl font-bold text-white">Participated Public Projects</h2>
+                        <ul className="list-disc">
+                          <li className="my-1 text-[#F9F871]"><a href="https://www.marvelconnect.com/" target="_blank" className="text-xl text-[#F9F871]">MarvelConnect Website</a></li>
+                          <li className="my-1 text-[#F9F871]"><a href="https://rewardbuy.shop/en" target="_blank" className="text-xl text-[#F9F871]">Rewardbuy shopping platform</a></li>
+                          <li className="my-1 text-[#F9F871]"><a href="https://www.mckln.edu.hk/" target="_blank" className="text-xl text-[#F9F871]">Methodist College school website</a></li>
+                          <li className="my-1 text-[#F9F871]"><a href="https://swhps.edu.hk/" target="_blank" className="text-xl text-[#F9F871]">SWH public school website</a></li>
+                          <li className="my-1 text-[#F9F871]"><a href="https://www.360img.net/en/" target="_blank" className="text-xl text-[#F9F871]">360 image system</a></li>
+                        </ul>
+                      </div>
                     </div>
                 </div>
             </main>
