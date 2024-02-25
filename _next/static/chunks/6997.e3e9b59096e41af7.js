@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6997],{6997:function(t,e,n){n.r(e),n.d(e,{drawStar:function(){return r}});let o={x:0,y:0};function r(t){let{context:e,particle:n,radius:r}=t,a=n.sides,s=n.starInset??2;e.moveTo(o.x,o.y-r);for(let t=0;t<a;t++)e.rotate(Math.PI/a),e.lineTo(o.x,o.y-r*s),e.rotate(Math.PI/a),e.lineTo(o.x,o.y-r)}}}]);

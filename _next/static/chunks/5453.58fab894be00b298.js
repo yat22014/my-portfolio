@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5453],{5453:function(t,e,a){async function n(t,e=!0){await t.addParticleUpdater("rotate",async t=>{let{RotateUpdater:e}=await a.e(1305).then(a.bind(a,1305));return new e(t)},e)}a.r(e),a.d(e,{loadRotateUpdater:function(){return n}})}}]);

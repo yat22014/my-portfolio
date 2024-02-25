@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8651],{8651:function(n,e,t){async function a(n,e=!0){await n.addParticleUpdater("color",async n=>{let{ColorUpdater:e}=await t.e(4423).then(t.bind(t,4423));return new e(n)},e)}t.r(e),t.d(e,{loadColorUpdater:function(){return a}})}}]);

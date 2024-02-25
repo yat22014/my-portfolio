@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6855],{6855:function(n,e,a){async function t(n,e=!0){let{LineDrawer:t}=await a.e(5283).then(a.bind(a,5283));await n.addShape("line",new t,e)}a.r(e),a.d(e,{loadLineShape:function(){return t}})}}]);
