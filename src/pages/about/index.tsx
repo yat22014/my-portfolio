@@ -16,8 +16,8 @@ export default function About() {
                 <h1>Hi, There! I am Frank Cheung.</h1>
                 <h2>I am a Hong Konger and currently living in Hong Kong.</h2>
                 <div className="description">
-                    As a web developer, I participated different types of projects and learn a lot of skills and experenices from that.
-                    Building frontend website based on design from designer, I also help to construct database schema for backend.
+                    As a web developer, I participat different types of projects and learn a lot of skills and experenices from that.
+                    Building frontend website based on design from designer, I also help to construct database schema for backend and then pass data back to frontend in different ways.
                 </div>
                 <div className='flex'>
                   <span className='icon'><a href="https://linkedin.com/in/frank-cheung-bba552186" target='__blank'><FaLinkedin /></a></span>

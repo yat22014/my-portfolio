@@ -133,9 +133,10 @@ export default function Experiences() {
                                 titleColor: "white",
                                 titleColorActive: "#70313E",
                             }}
-                            // classNames={{
+                            classNames={{
                             //   cardMedia: 'my-card-media',
-                            // }}
+                              title: '!text-xs lg:!text-base'
+                            }}
                             scrollable 
                         />
                     </div>

@@ -6,12 +6,14 @@ import '@/styles/globals.css';
 import '@/styles/about.css';
 import '@/styles/skills.css';
 import '@/styles/experiences.css';
+import {useRouter} from 'next/router';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
 
     return (
       <>
-        <NextUIProvider>
+        <NextUIProvider navigate={router.push}>
           <Layout>
             <Component {...pageProps} />
           </Layout>
